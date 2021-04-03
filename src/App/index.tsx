@@ -1,12 +1,12 @@
 import React from 'react';
 import Theme from './theme';
-import { BaseRoutes } from 'router';
+import { Home } from 'pages/Home';
 
 const App = () => {
   return (
     <React.StrictMode>
       <Theme>
-        <BaseRoutes />
+        <Home />
       </Theme>
     </React.StrictMode>
   );

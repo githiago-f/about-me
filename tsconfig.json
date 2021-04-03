@@ -22,5 +22,10 @@
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "tailwind.config.js",
+    "postcss.config.js",
+    "node_modules",
   ]
 }
