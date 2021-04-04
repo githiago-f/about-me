@@ -1,3 +1,4 @@
+import { Language } from 'components/Language';
 import React from 'react';
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 
 export const NavBar = ({user}: Props) => {
   return (
-    <nav className="bg-white w-100 shadow p-4 fixed left-0 right-0">
+    <nav className="bg-white w-100 shadow p-4 fixed left-0 top-0 right-0">
       <div className="flex justify-between">
         <a href="/">
           <h3 className="font-bold">
@@ -28,10 +29,7 @@ export const NavBar = ({user}: Props) => {
               </a>
             </li>
           </ul>
-          <select name="Language" id="language">
-            <option>Português</option>
-            <option>Inglês</option>
-          </select>
+          <Language/>
         </div>
       </div>
     </nav>

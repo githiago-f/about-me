@@ -8,6 +8,8 @@ describe('# Project Item', () => {
       <Project.Item 
         description='Descrição do item que foi criado'
         name="Nome do projeto"
+        language="javascript"
+        link="https://google.com"
       />
     );
   });

@@ -38,11 +38,11 @@ class EventLayer {
     this.events[event.eventGroup] = aList;
   }
 
-  public emit(event: EventType) {
+  public emit(event: EventType, ...args: any[]) {
     if(this.events[event]) {
       return;
     }
-    this.events[event].forEach(observer => observer());
+    this.events[event].forEach(observer => observer(...args));
   }
 }
 
