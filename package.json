@@ -9,22 +9,23 @@
     "private": true,
     "homepage": "/about-me",
     "dependencies": {
+        "@craco/craco": "5.8.0",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "react-scripts": "3.4.3",
-        "react-test-renderer": "^16.13.1",
-        "styled-components": "^5.1.1"
+        "react-test-renderer": "^16.13.1"
     },
     "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
         "eject": "react-scripts eject"
     },
     "eslintConfig": {
         "extends": "react-app"
     },
     "devDependencies": {
+        "@tailwindcss/postcss7-compat": "^2.0.4",
         "@testing-library/jest-dom": "5.11.4",
         "@testing-library/react": "11.0.4",
         "@testing-library/react-hooks": "^3.4.1",
@@ -34,7 +35,9 @@
         "@types/react": "^16.9.0",
         "@types/react-dom": "^16.9.0",
         "@types/react-test-renderer": "^16.9.3",
-        "@types/styled-components": "^5.1.0",
+        "autoprefixer": "^9",
+        "postcss": "^7",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat",
         "typescript": "4.0.3"
     },
     "browserslist": {

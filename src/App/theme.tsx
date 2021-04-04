@@ -1,13 +1,15 @@
+import { NavBar } from 'components/Nav';
 import React, { PropsWithChildren } from 'react';
-import { StyledBase } from 'components/StyledBase';
 import 'tailwindcss/tailwind.css';
 
 const Theme = (props: PropsWithChildren<{}>) => {
   return (
-    <>
-      {props?.children}
-      <StyledBase />
-    </>
+    <div className="min-h-screen bg-gray-100">
+      <NavBar/>
+      <div className="mt-3">
+        {props?.children}
+      </div>
+    </div>
   );
 };
 
