@@ -8,7 +8,6 @@ export const Language = () => {
     return possibleLanguages.map((i, idx) => (
       <option 
         key={idx} 
-        selected={language===i.value} 
         value={i.value}
       >{i.label}</option>
     ));
@@ -20,7 +19,7 @@ export const Language = () => {
       onChange={changeLanguage}
       title="Select your language" 
       id="language"
-      value={language}
+      defaultValue={language}
     >
       {renderOptions}
     </select>
