@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`# Project Item should render properly 1`] = `
+<div
+  class="w-100"
+  data-testid="item"
+>
+  <div
+    class="bg-white w-100 p-3 rounded-lg"
+  >
+    <h3
+      translate="no"
+    >
+      Nome do projeto
+    </h3>
+    <p
+      class="text-gray-500"
+    >
+      Descrição do item que foi criado
+    </p>
+  </div>
+</div>
+`;

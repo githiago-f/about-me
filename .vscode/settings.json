@@ -9,6 +9,7 @@
         "typescriptreact"
     ],
     "files.eol": "\n",
+    "editor.tabSize": 2,
     "[javascriptreact]": {
         "editor.codeActionsOnSave": {
             "source.fixAll.eslint": true

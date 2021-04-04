@@ -9,11 +9,11 @@
     "private": true,
     "homepage": "/about-me",
     "dependencies": {
-        "@craco/craco": "5.8.0",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-scripts": "3.4.3",
-        "react-test-renderer": "^16.13.1"
+        "@craco/craco": "^6.1.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "^4.0.3",
+        "react-test-renderer": "^17.0.2"
     },
     "scripts": {
         "start": "craco start",
@@ -25,20 +25,20 @@
         "extends": "react-app"
     },
     "devDependencies": {
-        "@tailwindcss/postcss7-compat": "^2.0.4",
+        "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
         "@testing-library/jest-dom": "5.11.4",
-        "@testing-library/react": "11.0.4",
-        "@testing-library/react-hooks": "^3.4.1",
-        "@testing-library/user-event": "12.1.6",
-        "@types/jest": "^24.0.0",
+        "@testing-library/react": "^11.2.6",
+        "@testing-library/react-hooks": "^5.1.1",
+        "@testing-library/user-event": "^13.1.1",
+        "@types/jest": "^26.0.22",
         "@types/node": "^14.14.37",
-        "@types/react": "^16.9.0",
+        "@types/react": "^17.0.3",
         "@types/react-dom": "^16.9.0",
-        "@types/react-test-renderer": "^16.9.3",
+        "@types/react-test-renderer": "^17.0.1",
         "autoprefixer": "^9",
         "postcss": "^7",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-        "typescript": "4.0.3"
+        "typescript": "^4.2.3"
     },
     "browserslist": {
         "production": [
