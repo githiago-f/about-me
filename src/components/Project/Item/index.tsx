@@ -1,5 +1,6 @@
 import React from 'react';
 import { Project } from 'entities';
+import { ProgramingLanguage } from 'components/ProgramingLanguage';
 
 export const Item = (props: Project) => (
   <div data-testid="item" className="w-100">
@@ -13,14 +14,25 @@ export const Item = (props: Project) => (
         />
       </div>
       <div className="flex flex-col">
-        <h3 className="font-medium text-2xl" translate="no">{props.name}</h3>
-        <p className="text-gray-500 truncate">{props.description}</p>
+        <div className="flex space-x-2 py-3">
+          <img
+            src={props.owner.avatar}
+            alt={props.owner.name}
+            width="32"
+            height="32"
+            className="rounded-full"
+            title={props.owner.name}
+            loading="lazy"
+          />
+          <h3
+            className="font-medium text-2xl" 
+            translate="no"
+          >{props.name}</h3>
+        </div>
+        <p className="text-gray-500 text-sm py-2 truncate">{props.description}</p>
+        <hr/>
         <div className="flex flex-row justify-between">
-          <div className="flex flex-row items-center justify-start">
-            <span className="rounded-full p-1 h-1 bg-blue-500"></span>
-            &nbsp;
-            <span translate="no">{props.language}</span>
-          </div>
+          <ProgramingLanguage language={props.language as any}/>
           <div className="flex flex-row-reverse">
             <a href={props.link}>View project</a>
           </div>

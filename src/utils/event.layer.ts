@@ -29,6 +29,7 @@ class EventLayer {
   public on(event: EventType, callback: Function) {
     this.events[event] = this.events[event] || [];
     const index = this.events[event]?.push(callback);
+    console.log(this.events);
     return this.event(event, index - 1);
   }
 
@@ -39,7 +40,7 @@ class EventLayer {
   }
 
   public emit(event: EventType, ...args: any[]) {
-    if(this.events[event]) {
+    if(!this.events[event]) {
       return;
     }
     this.events[event].forEach(observer => observer(...args));

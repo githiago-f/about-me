@@ -4,5 +4,11 @@ declare module 'entities' {
     description: string;
     language: string;
     link: string;
+    owner: Owner;
+  }
+
+  type Owner = {
+    name: string;
+    avatar: string;
   }
 }

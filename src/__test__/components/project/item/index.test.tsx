@@ -10,6 +10,10 @@ describe('# Project Item', () => {
         name="Nome do projeto"
         language="javascript"
         link="https://google.com"
+        owner={{
+          avatar: 'https://via.placeholder.com/300x300',
+          name: 'nobody'
+        }}
       />
     );
   });
