@@ -7,7 +7,7 @@ export const Language = () => {
   const renderOptions = useMemo(() => {
     return possibleLanguages.map((i, idx) => (
       <option 
-        key={idx} 
+        key={idx}
         value={i.value}
       >{i.label}</option>
     ));
@@ -19,6 +19,7 @@ export const Language = () => {
       onChange={changeLanguage}
       title="Select your language" 
       id="language"
+      className="p-1 border-gray-400 border-2 rounded-md"
       defaultValue={language}
     >
       {renderOptions}

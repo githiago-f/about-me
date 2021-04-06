@@ -19,7 +19,6 @@ export const useLanguage = () => {
 
     eventLayer.on(EventType.LANG_CHANGE, (lang: string) => {
       setLanguage(lang);
-      console.log('Language: ', lang);
     });
   }, []);
 
