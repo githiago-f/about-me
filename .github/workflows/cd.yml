@@ -22,7 +22,7 @@ jobs:
     - name: Build production files
       run: yarn build
       env:
-        PUBLIC_URL: ${{ secrets.github-pages.PAGE_LINK }}
+        PUBLIC_URL: ${{ secrets.PAGE_LINK }}
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
