@@ -1,11 +1,11 @@
-import { Owner, Project } from 'entities';
+import { OwnerMiniature, Project } from 'entities';
 
 type ProjectFactory = (
   name: string, 
   description: string, 
   language: string, 
   link: string,
-  owner: Owner) => Project;
+  owner: OwnerMiniature) => Project;
 
 export const projectFactory: ProjectFactory = (name, description, language, link, owner) => ({
   name,

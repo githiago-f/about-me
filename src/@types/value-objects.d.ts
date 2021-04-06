@@ -3,9 +3,16 @@ declare module 'value-objects' {
     label: string; 
     value:string;
   };
-  
+
+  type GitUser = {
+    avatar_url: string;
+    name: string;
+    bio: string;
+    login: string;
+    html_url: string;
+  };
+
   type Git = {
-    id: number;
     name: string;
     full_name: string;
     owner: any;

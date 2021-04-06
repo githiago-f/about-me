@@ -1,13 +1,15 @@
 import { githubApi } from 'api/github.api';
-import { Project } from 'entities';
+import { Project, User } from 'entities';
 import { ownerFactory } from 'factories/ownerFactory';
 import { projectFactory } from 'factories/projectFactory';
+import { userFactory } from 'factories/userFactory';
 import { useEffect, useMemo, useState } from 'react';
 import { Git } from 'value-objects';
 
-export const useGitHub = (user: string) => {
-  const service = useMemo(() => githubApi(user), []);
+export const useGitHub = (username: string) => {
+  const service = useMemo(() => githubApi(username), []);
   const [projects, setProjects] = useState([] as Project[]);
+  const [user, setUser] = useState(null as User | null | undefined);
 
   useEffect(() => {
     const gitToProject = (i: Git) => {
@@ -21,6 +23,12 @@ export const useGitHub = (user: string) => {
       );
     };
 
+    service.getUser()
+      .then(async gitUser => gitUser.map(userFactory).shift())
+      .then(setUser)
+      .catch(console.error)
+      .finally(() => console.log('user loaded!'));
+
     service.getProjects()
       .then(async gitProj => gitProj.map(gitToProject))
       .then(setProjects)
@@ -29,6 +37,7 @@ export const useGitHub = (user: string) => {
   }, []);
 
   return {
-    projects
+    projects,
+    user
   };
 };

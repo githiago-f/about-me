@@ -1,12 +1,18 @@
 import React from 'react';
 import Project from 'components/Project';
 import { useGitHub } from './hooks';
+import { Avatar } from 'components/Avatar';
 
 export const Home = () => {
-  const { projects } = useGitHub('githiago-f');
+  const { projects, user } = useGitHub('githiago-f');
   return (
     <>
-      <Project.List projects={projects}/>
+      <div hidden={!user}>
+        {(user && <Avatar user={user} />)}
+      </div>
+      <Project.List
+        projects={projects}
+      />
     </>
   );
 };

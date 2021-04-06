@@ -13,7 +13,7 @@ exports[`# Project Item should render properly 1`] = `
         alt="Project's thumbnail"
         class="object-cover h-48 w-full rounded-sm"
         loading="lazy"
-        src="https://via.placeholder.com/300x300"
+        src="https://via.placeholder.com/300x300?text=javascript"
       />
     </div>
     <div
@@ -24,7 +24,7 @@ exports[`# Project Item should render properly 1`] = `
       >
         <img
           alt="nobody"
-          class="rounded-full"
+          class="rounded-full object-contain border-purple-800 border-2"
           height="32"
           loading="lazy"
           src="https://via.placeholder.com/300x300"
@@ -32,7 +32,7 @@ exports[`# Project Item should render properly 1`] = `
           width="32"
         />
         <h3
-          class="font-medium text-2xl"
+          class="font-medium text-2xl truncate"
           translate="no"
         >
           Nome do projeto
@@ -45,7 +45,7 @@ exports[`# Project Item should render properly 1`] = `
       </p>
       <hr />
       <div
-        class="flex flex-row justify-between"
+        class="flex flex-row justify-between pt-2"
       >
         <div
           class="flex flex-row items-center justify-start space-x-2"
@@ -63,6 +63,7 @@ exports[`# Project Item should render properly 1`] = `
           class="flex flex-row-reverse"
         >
           <a
+            class="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md"
             href="https://google.com"
           >
             View project
