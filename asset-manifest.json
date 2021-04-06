@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/about-me/static/css/main.077569f0.chunk.css",
-    "main.js": "/about-me/static/js/main.0dd42f91.chunk.js",
-    "main.js.map": "/about-me/static/js/main.0dd42f91.chunk.js.map",
-    "runtime-main.js": "/about-me/static/js/runtime-main.0a6022aa.js",
-    "runtime-main.js.map": "/about-me/static/js/runtime-main.0a6022aa.js.map",
-    "static/css/2.77cada96.chunk.css": "/about-me/static/css/2.77cada96.chunk.css",
-    "static/js/2.110cbb23.chunk.js": "/about-me/static/js/2.110cbb23.chunk.js",
-    "static/js/2.110cbb23.chunk.js.map": "/about-me/static/js/2.110cbb23.chunk.js.map",
-    "static/js/3.bb85d108.chunk.js": "/about-me/static/js/3.bb85d108.chunk.js",
-    "static/js/3.bb85d108.chunk.js.map": "/about-me/static/js/3.bb85d108.chunk.js.map",
-    "index.html": "/about-me/index.html",
-    "static/css/2.77cada96.chunk.css.map": "/about-me/static/css/2.77cada96.chunk.css.map",
-    "static/css/main.077569f0.chunk.css.map": "/about-me/static/css/main.077569f0.chunk.css.map",
-    "static/js/2.110cbb23.chunk.js.LICENSE.txt": "/about-me/static/js/2.110cbb23.chunk.js.LICENSE.txt"
+    "main.css": "https://githiago-f.github.io/about-me/static/css/main.077569f0.chunk.css",
+    "main.js": "https://githiago-f.github.io/about-me/static/js/main.9413516a.chunk.js",
+    "main.js.map": "https://githiago-f.github.io/about-me/static/js/main.9413516a.chunk.js.map",
+    "runtime-main.js": "https://githiago-f.github.io/about-me/static/js/runtime-main.0bbbb109.js",
+    "runtime-main.js.map": "https://githiago-f.github.io/about-me/static/js/runtime-main.0bbbb109.js.map",
+    "static/css/2.77cada96.chunk.css": "https://githiago-f.github.io/about-me/static/css/2.77cada96.chunk.css",
+    "static/js/2.110cbb23.chunk.js": "https://githiago-f.github.io/about-me/static/js/2.110cbb23.chunk.js",
+    "static/js/2.110cbb23.chunk.js.map": "https://githiago-f.github.io/about-me/static/js/2.110cbb23.chunk.js.map",
+    "static/js/3.bb85d108.chunk.js": "https://githiago-f.github.io/about-me/static/js/3.bb85d108.chunk.js",
+    "static/js/3.bb85d108.chunk.js.map": "https://githiago-f.github.io/about-me/static/js/3.bb85d108.chunk.js.map",
+    "index.html": "https://githiago-f.github.io/about-me/index.html",
+    "static/css/2.77cada96.chunk.css.map": "https://githiago-f.github.io/about-me/static/css/2.77cada96.chunk.css.map",
+    "static/css/main.077569f0.chunk.css.map": "https://githiago-f.github.io/about-me/static/css/main.077569f0.chunk.css.map",
+    "static/js/2.110cbb23.chunk.js.LICENSE.txt": "https://githiago-f.github.io/about-me/static/js/2.110cbb23.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a6022aa.js",
+    "static/js/runtime-main.0bbbb109.js",
     "static/css/2.77cada96.chunk.css",
     "static/js/2.110cbb23.chunk.js",
     "static/css/main.077569f0.chunk.css",
-    "static/js/main.0dd42f91.chunk.js"
+    "static/js/main.9413516a.chunk.js"
   ]
 }
