@@ -22,10 +22,10 @@ jobs:
     - name: Build production files
       run: yarn build
       env:
-        PUBLIC_URL: https://githiago-f.github.io/about-me/
+        PUBLIC_URL: ${{ secrets.PAGE_LINK }}
 
     - name: Deploy
-      uses: JamesIves/github-pages-deploy-action@3.5.7
+      uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
