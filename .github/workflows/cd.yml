@@ -13,18 +13,18 @@ jobs:
       with:
         persist-credentials: false
 
-    - name: Set Actions Allow Unsecure Commands
-      run: |
-        echo "ACTIONS_ALLOW_UNSECURE_COMMANDS=true" >> $GITHUB_ENV
+    - name: Install dependencies
+      run: yarn install
 
-    - name: Run install, build and test before deploy
-      run: |
-        set PUBLIC_URL=https://githiago-f.github.io/about-me/
-        yarn
-        yarn test
-        yarn build
+    - name: Run all tests
+      run: yarn test
 
-    - name: Run deploy
+    - name: Build production files
+      run: yarn build
+      env:
+        PUBLIC_URL: https://githiago-f.github.io/about-me/
+
+    - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.5.7
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
