@@ -8,7 +8,9 @@ exports[`# Project Item should render properly 1`] = `
   <div
     class="bg-white w-100 p-3 rounded-lg shadow"
   >
-    <div>
+    <div
+      hidden=""
+    >
       <img
         alt="Project's thumbnail"
         class="object-cover h-48 w-full rounded-sm"
@@ -45,7 +47,7 @@ exports[`# Project Item should render properly 1`] = `
       </p>
       <hr />
       <div
-        class="flex flex-row justify-between pt-2"
+        class="flex flex-col sm:flex-row justify-between pt-2"
       >
         <div
           class="flex flex-row items-center justify-start space-x-2"
@@ -63,7 +65,7 @@ exports[`# Project Item should render properly 1`] = `
           class="flex flex-row-reverse"
         >
           <a
-            class="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md"
+            class="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md w-full text-center sm:text-left sm:w-auto"
             href="https://google.com"
           >
             View project
