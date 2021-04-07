@@ -1,2 +1,0 @@
-(this["webpackJsonpreact-ts-template"]=this["webpackJsonpreact-ts-template"]||[]).push([[3],{18:function(e){e.exports=JSON.parse('{"languages":[{"label":"Portugu\xeas BR","value":"pt-br"},{"label":"English US","value":"en"}]}')}}]);
-//# sourceMappingURL=3.bb85d108.chunk.js.map
