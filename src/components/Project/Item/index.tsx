@@ -5,7 +5,7 @@ import { ProgramingLanguage } from 'components/ProgramingLanguage';
 export const Item = (props: Project) => (
   <div data-testid="item" className="w-100">
     <div className="bg-white w-100 p-3 rounded-lg shadow">
-      <div>
+      <div hidden>
         <img 
           src={`https://via.placeholder.com/300x300?text=${props.language}`}
           alt="Project's thumbnail"
@@ -33,11 +33,11 @@ export const Item = (props: Project) => (
           {props.description}
         </p>
         <hr/>
-        <div className="flex flex-row justify-between pt-2">
+        <div className="flex flex-col sm:flex-row justify-between pt-2">
           <ProgramingLanguage language={props.language as any}/>
           <div className="flex flex-row-reverse">
             <a 
-              className="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md" 
+              className="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md w-full text-center sm:text-left sm:w-auto" 
               href={props.link}
             >
               View project

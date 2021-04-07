@@ -1,5 +1,5 @@
 import React from 'react';
-import { Language } from 'components/Language';
+// import { Language } from 'components/Language';
 
 export const NavBar = () => {
   return (
@@ -11,19 +11,7 @@ export const NavBar = () => {
           </h3>
         </a>
         <div className="space-x-6">
-          <ul className="inline-flex space-x-3">
-            <li>
-              <a href="#about">
-                Sobre
-              </a>
-            </li>
-            <li>
-              <a href="#tecnologias">
-                Tecnologias
-              </a>
-            </li>
-          </ul>
-          <Language/>
+          {/* <Language/> */}
         </div>
       </div>
     </nav>

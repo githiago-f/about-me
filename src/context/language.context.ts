@@ -13,7 +13,7 @@ export const useLanguage = () => {
   const [language, setLanguage] = useState('en');
 
   useEffect(() => {
-    import('locale/config.json')
+    import('config/config.json')
       .then(i=>setPossibleLanguages(i.languages))
       .catch(console.error);
 
