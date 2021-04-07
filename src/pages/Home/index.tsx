@@ -4,7 +4,7 @@ import { useGitHub } from './hooks';
 import { Avatar } from 'components/Avatar';
 
 export const Home = () => {
-  const { projects, user } = useGitHub('githiago-f');
+  const { projects, user } = useGitHub();
   return (
     <>
       <div hidden={!user}>

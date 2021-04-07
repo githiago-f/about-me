@@ -17,7 +17,7 @@ export const Avatar = (props: Props) => (
         />
       </div>
       <div className="flex flex-col justify-center pt-5">
-        <a href={props.user.link} className="text-blue-500">@{props.user.at}</a>
+        <a href={props.user.link} className="text-blue-800">@{props.user.at}</a>
         <h2 className="text-4xl font-bold">{props.user.name}</h2>
         <p>{props.user.bio}</p>
       </div>

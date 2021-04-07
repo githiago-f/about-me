@@ -26,5 +26,6 @@ declare module 'value-objects' {
     is_template: boolean;
     topics: string[];
     updated_at: string;
+    homepage: string | null;
   };
 }
