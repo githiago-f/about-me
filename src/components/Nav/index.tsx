@@ -10,9 +10,6 @@ export const NavBar = () => {
             Portifólio <span className="bg-blue-600 px-2 text-white rounded-md">dev</span>
           </h3>
         </a>
-        <div className="space-x-6">
-          {/* <Language/> */}
-        </div>
       </div>
     </nav>
   );
