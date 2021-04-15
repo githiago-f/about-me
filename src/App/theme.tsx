@@ -1,6 +1,7 @@
-import { Container } from 'components/Container';
-import { NavBar } from 'components/Nav';
 import React, { PropsWithChildren } from 'react';
+import { Container } from 'components/Container';
+import { Footer } from 'components/Footer';
+import { NavBar } from 'components/Nav';
 import 'tailwindcss/tailwind.css';
 
 const Theme = (props: PropsWithChildren<{}>) => {
@@ -10,6 +11,7 @@ const Theme = (props: PropsWithChildren<{}>) => {
       <Container>
         {props?.children}
       </Container>
+      <Footer/>
     </div>
   );
 };
