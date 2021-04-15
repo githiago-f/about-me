@@ -1,13 +1,6 @@
 {
   "github_username": "githiago-f",
-  "languages": [
-    {
-      "label": "Português BR",
-      "value": "pt-br"
-    },
-    {
-      "label": "English US",
-      "value": "en"
-    }
-  ]
+  "project_section": "Projects I'm working on",
+  "home_button": "Portifólio",
+  "view_project": "View project"
 }

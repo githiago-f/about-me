@@ -1,5 +1,21 @@
 @tailwind base;
 @tailwind components;
+
+.btn-view-project {
+  @apply p-2 
+  hover:bg-blue-300 
+  focus:bg-blue-400 
+  bg-blue-600 
+  border-gray-700
+  border-2
+  rounded-md w-full 
+  text-center 
+  sm:text-left 
+  text-white
+  text-base
+  sm:w-auto;
+}
+
 @tailwind utilities;
 
 .content {

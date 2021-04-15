@@ -5,14 +5,6 @@ import { ProgramingLanguage } from 'components/ProgramingLanguage';
 export const Item = (props: Project) => (
   <div data-testid="item" className="w-100">
     <div className="bg-white w-100 p-3 rounded-lg shadow">
-      <div hidden>
-        <img 
-          src={`https://via.placeholder.com/300x300?text=${props.language}`}
-          alt="Project's thumbnail"
-          loading="lazy"
-          className="object-cover h-48 w-full rounded-sm"
-        />
-      </div>
       <div className="flex flex-col">
         <div className="flex space-x-2 py-3">
           <img
@@ -37,8 +29,9 @@ export const Item = (props: Project) => (
           <ProgramingLanguage language={props.language as any}/>
           <div className="flex flex-row-reverse">
             <a 
-              className="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md w-full text-center sm:text-left sm:w-auto" 
+              className="btn-view-project" 
               href={props.link}
+              title={props.name}
             >
               View project
             </a>
