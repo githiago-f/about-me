@@ -1,0 +1,2 @@
+(this["webpackJsonpreact-ts-template"]=this["webpackJsonpreact-ts-template"]||[]).push([[3],{16:function(t){t.exports=JSON.parse('{"github_username":"githiago-f","project_section":"Projects I\'m working on","home_button":"Portif\xf3lio","view_project":"View project"}')}}]);
+//# sourceMappingURL=3.7120a853.chunk.js.map
