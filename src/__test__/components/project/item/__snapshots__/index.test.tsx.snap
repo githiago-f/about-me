@@ -9,16 +9,6 @@ exports[`# Project Item should render properly 1`] = `
     class="bg-white w-100 p-3 rounded-lg shadow"
   >
     <div
-      hidden=""
-    >
-      <img
-        alt="Project's thumbnail"
-        class="object-cover h-48 w-full rounded-sm"
-        loading="lazy"
-        src="https://via.placeholder.com/300x300?text=javascript"
-      />
-    </div>
-    <div
       class="flex flex-col"
     >
       <div
@@ -65,8 +55,9 @@ exports[`# Project Item should render properly 1`] = `
           class="flex flex-row-reverse"
         >
           <a
-            class="p-2 focus:bg-gray-400 hover:bg-gray-300 rounded-md w-full text-center sm:text-left sm:w-auto"
+            class="btn-view-project"
             href="https://google.com"
+            title="Nome do projeto"
           >
             View project
           </a>
