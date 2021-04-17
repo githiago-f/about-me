@@ -5,6 +5,11 @@
         "name": "githiago-f",
         "url": "https://github.com/githiago-f"
     },
+    "engines": {
+        "node": ">= 12.22.1",
+        "npm": "Please use yarn",
+        "yarn": ">= 1.19.1"
+    },
     "version": "0.2.0",
     "private": true,
     "homepage": "/about-me",
@@ -27,7 +32,7 @@
     },
     "devDependencies": {
         "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
-        "@testing-library/jest-dom": "5.11.4",
+        "@testing-library/jest-dom": "5.11.10",
         "@testing-library/react": "^11.2.6",
         "@testing-library/react-hooks": "^5.1.1",
         "@testing-library/user-event": "^13.1.1",
