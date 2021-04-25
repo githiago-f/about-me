@@ -30,7 +30,7 @@ export const useGitHub = () => {
         .then(async gitUser => gitUser.map(userFactory).shift())
         .then(user => {
           setUser(user);
-          document.title = `Portifólio | ${user?.name}`;
+          document.title = `Portfolio | ${user?.name}`;
         })
         .catch(console.error)
         .finally(() => console.log('user loaded!'));
